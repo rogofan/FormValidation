@@ -2,6 +2,9 @@ import useInput from "../hooks/use-input";
 
 const BasicForm = (props) => {
   //Instead of using the useInput hook, we can use Formik library
+
+  //Variables used for submitting the form
+  let formIsValid = false;
   //Entered first name and validity (must not be empty)
   const {
     value: enteredFName,
