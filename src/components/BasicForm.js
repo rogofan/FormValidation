@@ -15,6 +15,7 @@ const BasicForm = (props) => {
     reset: resetFNameInput,
   } = useInput((value) => value.trim() !== "");
   //Entered last name and validity (must not be empty)
+
   const {
     value: enteredLName,
     isValid: enteredLNameIsValid,
